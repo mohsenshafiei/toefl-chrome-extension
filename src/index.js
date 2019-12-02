@@ -2,14 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import style from './style.scss';
 import { randomIntegerInRange } from './util.js'
-
+import { toefl } from './words.js'
 const App = () => {
-  const list = [
-    ['Easy', 'راحت'],
-    ['Hard', 'سخت'],
-    ['Normal', 'متوسط'],
-    ['Legend', 'بسیار سخت']
-  ];
+  const list = toefl;
   const hard = [];
   const normal = [];
   const easy = [];
