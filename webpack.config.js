@@ -1,5 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
+
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
@@ -17,8 +18,17 @@ module.exports = {
         options: { presets: ["@babel/env"] }
       },
       {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"]
+        test: /\.s?css$/,
+        use: [
+          "style-loader",
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+            },
+          },
+          "sass-loader"
+        ]
       }
     ]
   },

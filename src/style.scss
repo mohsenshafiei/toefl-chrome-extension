@@ -1,0 +1,55 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  font-size: 16px;
+}
+
+.container {
+  position: relative;;
+  margin-top: -20px;
+  min-width: 400px;
+  max-width: 400px;
+  min-height: 400px;
+  max-height: 400px;
+  background-color: white;
+  border: 2px solid red;
+}
+
+.title {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 20px auto;
+}
+
+.meaning {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 20px auto;
+}
+
+.controllersContainer {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  text-align: center;
+}
+
+.controllers {
+  box-shadow: none;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: green;
+  color: white;
+  font-size: 18px;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 4px 8px;
+}
