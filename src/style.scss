@@ -30,11 +30,15 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 20px auto;
+  font-size: 18px;
+  min-width: 380px;
+  line-height: 1.5em;
+  text-align: center;
 }
 
 .controllersContainer {
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
@@ -52,4 +56,24 @@ body {
   margin-left: 4px;
   margin-right: 4px;
   padding: 4px 8px;
+}
+.showMeaning {
+  background-color: blue;
+  color: white;
+}
+.easy {
+  background-color: green;
+  color: white;
+}
+.normal {
+  background-color: yellow;
+  color: black;
+}
+.hard {
+  background-color: orange;
+  color: black;
+}
+.legend {
+  background-color: red;
+  color: white;
 }
